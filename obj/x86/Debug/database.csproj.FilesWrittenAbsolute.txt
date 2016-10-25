@@ -1,0 +1,6 @@
+/home/jesper/database/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/jesper/database/bin/Debug/System.Data.SQLite.dll
+/home/jesper/database/bin/Debug/database.exe.mdb
+/home/jesper/database/bin/Debug/database.exe
+/home/jesper/database/obj/x86/Debug/database.exe
+/home/jesper/database/obj/x86/Debug/database.exe.mdb
