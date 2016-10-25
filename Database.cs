@@ -38,7 +38,7 @@ namespace database
 		// A method for creating tables in the databasefile
 		private void CreateTables()
 		{
-			Execute("CREATE TABLE IF NOT EXISTS rankTable (player VARCHAR(20), matches INTERGER, wins INTERGER, points INTERGER");
+			Execute("CREATE TABLE IF NOT EXISTS rankTable (player VARCHAR(20), matches INTERGER, wins INTERGER, points INTERGER)");
 		}
 
 		// A method for executing SQL string in the database
