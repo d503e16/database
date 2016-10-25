@@ -13,7 +13,7 @@ namespace database
 	public class Database
 	{
 		//Lists of object contained in the Database instance used to retrieve data from the database file
-		public string[] userTableColumns = new string[4]{"player", "matches", "wins", "points"};
+		public string[] playerTableColumns = new string[4]{"player", "matches", "wins", "points"};
 		public SQLiteConnection m_dbConnection;
 		public List<string> readInfo = new List<string>();
 
