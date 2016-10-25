@@ -31,13 +31,13 @@ namespace database
 		public int Wins
 		{
 			get { return _wins; }
-			set { _wins = value }
+			set { _wins = value; }
 		}
 
 		public int Points
 		{
-			get { return _points }
-			set { _points = value }
+			get { return _points; }
+			set { _points = value; }
 		}
 
 		public Player (string username, int matches, int wins, int points)

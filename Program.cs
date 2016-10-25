@@ -11,9 +11,9 @@ namespace database
 {
 	class MainClass
 	{
-		private Database _data;
+		/*private Database _data;
 		private List<string> _info;
-		private List<Player> _allPlayers;
+		private List<Player> _allPlayers;*/
 
 
 		public Database Data
@@ -21,29 +21,30 @@ namespace database
 			get { return _data; }
 			set { _data = value; }
 		}
-		_info = new List<string>();
-		_allPlayers = new List<Player>();
 
 		public static void Main (string[] args)
 		{
-			_data.InitDatabase();
+			Database data = new Database ();
+			data.InitDatabase ();
+			/*_info = new List<string>();
+			_allPlayers = new List<Player>();*/
 		}
 
 
-		public void LoadPlayersFromDatabase()
+		/*public void LoadPlayersFromDatabase()
 		{
 			string sql = "SELECT * FROM userTable";
 			_data.Read(sql, ref _info, _data.playerTableColumns);
 			foreach (var item in _info)
 			{
 				string[] split = item.Split(new Char[] { ',' });
-				_allPlayers.Add(new Player split[0], (int.Parse(split[1]),(int.Parse(split[0]), (int.Parse(split[0])))));
+				_allPlayers.Add(new Player(split[0], int.Parse(split[1]),int.Parse(split[2]), int.Parse(split[3])));
 			}
 			foreach (Player item in _allPlayers)  
 			{
 				Console.WriteLine (item.Username + item.Points);
 			}
-		}
+		}*/
 
 	}
 }

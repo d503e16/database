@@ -9,7 +9,6 @@ using System.Data.Common;
 
 namespace database
 {
-	// Definition of the Core singelton object
 	public class Database
 	{
 		//Lists of object contained in the Database instance used to retrieve data from the database file
