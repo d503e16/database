@@ -38,8 +38,8 @@ namespace database
 		// A method for creating tables in the databasefile
 		private void CreateTables()
 		{
-			Execute("CREATE TABLE IF NOT EXISTS rankTable (id INTEGER, username VARCHAR(20), points INTERGER)");
-			Execute("CREATE TABLE IF NOT EXISTS matchTable (matchId INTEGER, match VARCHAR(1000000))");
+			Execute("CREATE TABLE IF NOT EXISTS rankTable (id INTEGER PRIMARY KEY, username VARCHAR(20), points INTERGER)");
+			Execute("CREATE TABLE IF NOT EXISTS matchTable (matchId INTEGER PRIMARY KEY, match VARCHAR(1000000))");
 		}
 
 		// A method for executing SQL string in the database
