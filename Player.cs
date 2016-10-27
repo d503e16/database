@@ -11,28 +11,21 @@ namespace database
 {
 	public class Player
 	{
+		private int _id;
 		private string _username;
-		private int _matches;
-		private int _wins;
 		private int _points;
 
+		public int Id
+		{
+			get { return _id; }
+			set { _id = value; }
+		}
+			
 		public string Username
 		{
 			get { return _username; }
 			set { _username = value; }
 		}	
-
-		public int Matches
-		{
-			get { return _matches; }
-			set { _matches = value; }
-		}
-
-		public int Wins
-		{
-			get { return _wins; }
-			set { _wins = value; }
-		}
 
 		public int Points
 		{
@@ -40,11 +33,10 @@ namespace database
 			set { _points = value; }
 		}
 
-		public Player (string username, int matches, int wins, int points)
+		public Player (int id, string username, int points)
 		{
+			_id = id;
 			_username = username;
-			_matches = matches;
-			_wins = wins;
 			_points = points;
 		}
 	}
