@@ -13,7 +13,7 @@ namespace database
 	{
 		//Lists of object contained in the Database instance used to retrieve data from the database file
 		public string[] playerTableColumns = new string[3]{"id", "username", "points"};
-		public string[] matchTableColumns = new string[1]{"match"};
+		public string[] matchTableColumns = new string[2]{"matchid", "match"};
 		public SQLiteConnection m_dbConnection;
 		public List<string> readInfo = new List<string>();
 
@@ -39,7 +39,7 @@ namespace database
 		private void CreateTables()
 		{
 			Execute("CREATE TABLE IF NOT EXISTS rankTable (id INTEGER, username VARCHAR(20), points INTERGER)");
-			Execute("CREATE TABLE IF NOT EXISTS matchTable (match VARCHAR(1000000))");
+			Execute("CREATE TABLE IF NOT EXISTS matchTable (matchId INTEGER, match VARCHAR(1000000))");
 		}
 
 		// A method for executing SQL string in the database

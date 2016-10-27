@@ -21,9 +21,10 @@ namespace database
 			Data.InitDatabase ();
 		}
 
+		#Her mangler der at identificere matchid, og lægge den ind i databasen
 		public AddMatches(string match)
 		{
-			string sql = "INSERT OR REPLACE INTO matchTable (match) values ('" + match + "')";
+			string sql = "INSERT OR REPLACE INTO matchTable (matchId, match) values ('" + match + "')";
 			Data.Execute(sql);
 		}
 
