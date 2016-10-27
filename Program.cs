@@ -21,6 +21,12 @@ namespace database
 			Data.InitDatabase ();
 		}
 
+		public AddMatches(string match)
+		{
+			string sql = "INSERT OR REPLACE INTO matchTable (match) values ('" + match + "')";
+			Data.Execute(sql);
+		}
+
 
 		public void LoadMatches()
 		{
